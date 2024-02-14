@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body class="principal">
+    <h1 class="titleprincipal">SELECTORES</h1>
+    <ul class="lista">
+        <li>
+            <h2 class="title2">Selector de Etiqueta: <span class="description0">Aplica etiquetas de un solo tipo h1, p, span, etc.</span></h2>
+            <p>Estilo solo a la etiqueta P</p>
+        </li>
+        <li>
+            <h2 class="title2">Selector de Clase: <span class="description0">Aplica CSS a elementos que tienen el mismo nombre de CLASE .title; .parrafo; etc </title>.</span></h2>
+            <p class="textp"> Estilo a la CLASE .textp</p>
+        </li>
+        <li>
+            <h2 class="title2">Selector de ID: <span class="description0">Aplica CSS a elementos dentro del atributo ID #principal, #secundario.</span></h2>
+            <p id="name"> Estilo al ID #name</p>
+        </li>
+        <li>
+            <h2 class="title2">Selector Descendencia: <span class="description0">Selecciona los elementos que se encuentran dentro de otros</span></h2>
+            <p>Ejemplo: <span>Aplicando estilo a un span dentro de p</span></p>
+        </li>
+        <li>
+            <h2 class="title2">Selector Hijo Directo: <span class="description0">Selecciona elementos que sean directamente descendientes de otro (Se usa >)</span></h2>
+            <div>
+                <p>Tenemos una etiqueta div y dentro hay una "a" dentro de "p"; y otro solo "a". Aplicaremos div > a</p>
+                <p><a href="">No se pinta de blanco</a></p>
+                <a href="">Si se pinta de blanco</a>
+            </div>
+        </li>
+        <li>
+            <h2 class="title2">Selector Hermano Siguiente o Adyacente: <span class="description0">Selecciona elementos que se encuentran justo a continuación de otros. (Se usa +)</span></h2>
+            <p>Aplica estilos a elementos que esten en la misma jerarquía y se encuentre inmediatamente uno despues del otro.
+            Ejemplos dentro de un div tenemos h2 y h3, si uso div h2 + h3 (estare dando estilos a los h3 que sigan despues de h2 dentro de div.ejemplo)</p>
+            <div class="ejemplo">
+                <h2>Hermano</h2>
+                <h3>Hermano Adyacente</h3>
+                <h2>Hermano 2</h2>
+                <h3>Hermano Adyacente 2</h3>
+            </div>
+        </li>
+        <li>
+            <h2 class="title2">Selector Hermanos Generales: <span class="description0">Selecciona elementos que no necesariamente se encuentran justo a continuación de otros. (Se usa ~)</span></h2>
+            <p>Aplica estilos a elementos que esten en la misma jerarquía pero que no necesariamente se encuentre uno despues del otro.
+            Ejemplos dentro de un div tenemos h2, p, h3. Si uso div h2 ~ h3 (estare dando estilos a todos los h3 que esten dentro de h2 en div.ejemplos)</p>
+            <div class="ejemplos">
+                <h2>Soy Hermano H2</h2>
+                <h3>Soy hermano H3</h3>
+                <p>Soy p (no debo tener mismo estilo que h3)</p>
+                <h3>Soy hermano H3</h3>
+            </div>
+        </li>
+        <li>
+            <h2 class="title2">Selector de anidamiento: <span class="description0">Sirve para dar estilo en comun a un grupo de elementos que tienen Etiquetas, Clases o ID</span></h2>
+            <p>Aqui hay h2.uno h3.dos p.tres y h3, deseo dar mismo estilo a toso ellos lo pongo separado por una coma
+                .uno, .dos, .tres, h3 (Daremos mismo estilo a todos porque son selectro de anidamiento)
+            </p>
+            <section>
+                <h2 class="uno">Soy h2.uno</h2>
+                <h3 class="dos">Soy h3.dos</h3>
+                <p class="tres">Soy p,tres</p>
+                <h3>Soy h3</h3>
+        </li>
+    </ul>
+    </div>
+
+    <button><a class="linea" href="./index.html">Principal</a></button>
+</body>
+</html>
